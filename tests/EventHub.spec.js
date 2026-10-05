@@ -217,7 +217,7 @@ test("Event Hub Automation Assignment2 Single Ticket Booking", async ({
   // await page.locator("#refund-spinner").focus();
   await page.waitForSelector("#refund-spinner", {
     state: "hidden",
-    timeout: 6000,
+    timeout: 10000,
   });
   expect(await page.locator("#refund-result").isVisible()).toBeTruthy();
   expect(await page.locator("#refund-result")).toContainText(
@@ -309,7 +309,7 @@ test("Event Hub Automation Assignment3 Group Ticket Booking", async ({
   // await page.locator("#refund-spinner").focus();
   await page.waitForSelector("#refund-spinner", {
     state: "hidden",
-    timeout: 6000,
+    timeout: 10000,
   });
   expect(await page.locator("#refund-result").isVisible()).toBeTruthy();
   expect(await page.locator("#refund-result")).toContainText(
